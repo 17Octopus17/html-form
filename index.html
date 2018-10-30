@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Simple Html Form</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Personal Information</h1>
+        <form name="form" method="post" action="https://mate-academy-form-lesson.herokuapp.com/create-application">
+            <fieldset>
+                <legend>Personal Information </legend>
+        
+            <label for="sname">Surname</label>
+            <input type="text" name="surname" maxlength="20"/> <br>
+
+            <label for="name">Name</label>
+            <input type="text" name="name" minlength="2"> <br>
+
+            <label for="age">How old are You?:</label>
+            <input type="number" name="age"  max="3" value="0"/> <br>
+
+            <label for="birth">Full date of birth</label>
+            <input type="date" id="pickdate" name="date" /> <br>
+
+            <label for="agreement">I accept the terms of the agreement</label>
+            <input type="checkbox" name="checkbox"/> <br>
+
+            </fieldset>
+
+            <fieldset>
+                <legend>Registration</legend>
+
+            <label for="email">E-mail</label>
+            <input type="email" placeholder="username@mail.com" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" autocomplete="off" required /> <br>
+
+            <label for="psw">Password</label>
+            <input type="password" id="psw" name="psw" placeholder="Enter Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required />
+
+            </fieldset>
+
+            <fieldset>
+                <legend>An interesting fact about you!</legend>
+
+            <label for="cats">Do you love cats?</label> <br>
+            <input type="radio" id="inlineRadio1" name="inlineRadioOptions" value="option1" /> 
+            <label for="inlineRadio1">Yes</label> <br>
+            <input type="radio" id="inlineRadio2" name="inlineRadioOptions" value="option2" /> 
+            <label for="inlineRadio2">No</label> <br>
+            
+            <label for="color">What is your favorite color?<br><input type="color" name="color" /> </label> <br>
+            <label for="time">What time do you go to bed?<br><input type="time" name="time" value="time" /></label> <br>
+            <label for="select">What your favorite brand of cars?</label> <br>
+            <select name="car">
+                <option value="bmw">BMW</option>
+                <option value="audi">Audi</option>
+                <option value="lada">Lada</option>
+            </select>
+            <br>
+            <label for="range">How do you rate our work?<br><input type="range" name="range" /></label>
+            </fieldset>
+            <fieldset>
+                <legend>Your comments:</legend>
+               <textarea name="comment" placeholder="Comments"></textarea>
+            </fieldset>
+            <br>
+            <input type="submit" name="submit" value="Submit">
+
+
+
+
+        </form>
+    </div>
+    
+</body>
+</html>
