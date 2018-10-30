@@ -12,43 +12,24 @@
         <form name="form" method="post" action="https://mate-academy-form-lesson.herokuapp.com/create-application">
             <fieldset>
                 <legend>Personal Information </legend>
-        
             <label>Surname<input type="text" name="surname" maxlength="20"/> <br></label>
-            
-
             <label>Name<input type="text" name="name" minlength="2"> <br></label>
-            
-
             <label>How old are You?:<input type="number" name="age"  max="3" value="0"/> <br></label>
-            
-
             <label>Full date of birth<input type="date" id="pickdate" name="date" /> <br></label>
-            
-
             <label>I accept the terms of the agreement<input type="checkbox" name="checkbox"/> <br></label>
-            
-
             </fieldset>
 
             <fieldset>
                 <legend>Registration</legend>
-
             <label>E-mail<input type="email" placeholder="username@mail.com" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" autocomplete="off" required /> <br></label>
-            
-
-            <label>Password<input type="password" id="psw" name="psw" placeholder="Enter Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required /></label>
-            
-
+            <label>Password<input type="password" id="psw" name="psw" placeholder="Enter Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required /></label>  
             </fieldset>
 
             <fieldset>
                 <legend>An interesting fact about you!</legend>
-
             <label>Do you love cats?</label> <br>
-            
             <label for="inlineRadio1"><input type="radio" id="inlineRadio1" name="inlineRadioOptions" value="option1" /> Yes</label> <br>
             <label for="inlineRadio2"><input type="radio" id="inlineRadio2" name="inlineRadioOptions" value="option2" /> No</label> <br>
-            
             <label>What is your favorite color?<br><input type="color" name="color" /> </label> <br>
             <label>What time do you go to bed?<br><input type="time" name="time" /></label> <br>
             <label>What your favorite brand of cars?</label> <br>
@@ -66,12 +47,7 @@
             </fieldset>
             <br>
             <input type="submit" name="submit" value="Submit">
-
-
-
-
         </form>
     </div>
-    
 </body>
 </html>
